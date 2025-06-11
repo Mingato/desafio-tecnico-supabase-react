@@ -720,51 +720,6 @@ docker-compose logs app
 
 Contribuições são sempre bem-vindas! Para contribuir:
 
-### Como contribuir:
-
-1. **Fork** o projeto
-2. **Clone** seu fork:
-   ```bash
-   git clone https://github.com/seu-usuario/desafio-tecnico.git
-   ```
-3. **Crie uma branch** para sua feature:
-   ```bash
-   git checkout -b feature/minha-nova-feature
-   ```
-4. **Faça suas alterações** seguindo os padrões do projeto
-5. **Teste suas alterações**:
-   ```bash
-   npm test
-   npm run lint
-   # Ou com Docker
-   make test
-   make lint
-   ```
-6. **Commit suas mudanças**:
-   ```bash
-   git commit -m 'feat: adiciona minha nova feature'
-   ```
-7. **Push para a branch**:
-   ```bash
-   git push origin feature/minha-nova-feature
-   ```
-8. **Abra um Pull Request**
-
-### Padrões de commit:
-
-- `feat:` nova funcionalidade
-- `fix:` correção de bug
-- `docs:` alterações na documentação
-- `style:` formatação de código
-- `refactor:` refatoração de código
-- `test:` adição de testes
-- `chore:` tarefas de manutenção
-- `perf:` melhorias de performance
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ---
 
 <div align="center">
