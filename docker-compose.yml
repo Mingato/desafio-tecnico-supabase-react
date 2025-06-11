@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # Aplicação React
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: desafio-tecnico-app
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`localhost`)"
+      - "traefik.http.services.app.loadbalancer.server.port=80"
+
+  # Aplicação de desenvolvimento (opcional)
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: desafio-tecnico-dev
+    ports:
+      - "3001:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    profiles:
+      - dev
+    restart: unless-stopped
+
+networks:
+  default:
+    name: desafio-tecnico-network 

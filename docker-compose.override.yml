@@ -1,0 +1,36 @@
+# docker-compose.override.yml
+# Configurações para desenvolvimento local
+# Este arquivo é automaticamente carregado quando executar docker-compose
+
+version: '3.8'
+
+services:
+  app:
+    # Sobrescreve configurações para desenvolvimento
+    environment:
+      - NODE_ENV=development
+    volumes:
+      # Volume para hot reload em desenvolvimento
+      - .:/app:cached
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: ["npm", "start"]
+
+  # Nginx para servir em produção local
+  nginx:
+    image: nginx:alpine
+    container_name: desafio-tecnico-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./build:/usr/share/nginx/html:ro
+    depends_on:
+      - app
+    profiles:
+      - production
+
+# Volumes nomeados para persistência
+volumes:
+  node_modules: 
