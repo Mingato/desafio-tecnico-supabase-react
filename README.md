@@ -683,10 +683,8 @@ docker-compose logs app
 - [ ] **Importação em lote** de fornecedores
 - [ ] **Histórico de alterações** com auditoria
 - [ ] **API REST** customizada para integrações
-- [ ] **Notificações** para ações importantes
-- [ ] **Temas** dark/light mode
 - [ ] **Backup automático** do banco de dados
-- [ ] **Logs estruturados** com ELK Stack
+- [ ] **Logs estruturados**
 
 ### Melhorias técnicas:
 
