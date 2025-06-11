@@ -98,11 +98,11 @@ Certifique-se de ter instalado em sua máquina:
 - **Git**
 - Conta no [Supabase](https://supabase.com)
 
-### 1. Extrair o projeto
+### 1. Clonar o repositório
 
 ```bash
-tar -xzf desafio_tecnico_entrega.tar.gz
-cd desafio_tecnico
+git clone https://github.com/seu-usuario/desafio-tecnico.git
+cd desafio-tecnico-supabase-react
 ```
 
 ### 2. Instalação das dependências
@@ -219,7 +219,7 @@ A aplicação estará disponível em `http://localhost:3000`
 ## 🏗️ Estrutura do Projeto
 
 ```
-desafio_tecnico/
+desafio-tecnico/
 ├── public/
 │   ├── index.html
 │   └── ...
