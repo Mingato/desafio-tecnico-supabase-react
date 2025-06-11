@@ -19,7 +19,7 @@
 - [Performance](#-otimizações-de-performance)
 - [Scripts](#-scripts-disponíveis)
 - [Troubleshooting](#-troubleshooting)
-- [Próximos Passos](#-próximos-passos)
+- [Próximos Passos que poderiam ser aplicadas ao projeto para ficar mais robusto](#-próximos-passos)
 - [Contribuição](#-contribuição)
 - [Licença](#-licença)
 
