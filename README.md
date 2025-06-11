@@ -716,10 +716,6 @@ docker-compose logs app
 - ✅ **Makefile** para automação de comandos
 - ✅ **Docker Compose** para orquestração local
 
-## 🤝 Contribuição
-
-Contribuições são sempre bem-vindas! Para contribuir:
-
 ---
 
 <div align="center">
